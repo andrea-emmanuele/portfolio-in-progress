@@ -1,5 +1,3 @@
-let titleAnimDuration = 0;
-
 title();
 subTitle();
 buttons();
@@ -111,7 +109,7 @@ function illustration() {
 
 function subTitle() {
     const subtitleContainer = document.querySelector('#sub-title');
-    const subtitle = 'Thank you to be here.';
+    const subtitle = 'Thank you for being here.';
     const splittedSubtitle = subtitle.split('');
 
     splittedSubtitle.forEach(item => {
@@ -129,6 +127,7 @@ function buttons() {
 function title() {
     const titleContainer = document.querySelector('#title');
     const title = 'Still in progress.';
+    let titleAnimDuration = 0;
     const duration = 3;
 
     const splittedTitle = title.split('');
