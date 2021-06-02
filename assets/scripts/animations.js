@@ -120,8 +120,11 @@ function subTitle() {
 }
 
 function buttons() {
-    const buttons = document.querySelectorAll(".buttons-group");
-    gsap.fromTo(buttons, {opacity: 0, x: -1000, duration: 1}, {opacity: 1, x: 0, delay: 2});
+    let screenLeft = -window.innerWidth;
+    console.log(screenLeft);
+
+    const buttons = document.querySelector(".buttons-group");
+    gsap.fromTo(buttons, {opacity: 0, x: screenLeft, duration: 1}, {opacity: 1, x: 0, delay: 2});
 }
 
 function title() {
